@@ -1,17 +1,21 @@
 import React from 'react';
-
-const collOneImages = [
-  '../img/1Collection1.jpg',
-  '../img/2Collection1.jpg',
-  '../img/3Collection1.jpg',
-  '../img/4Collection1.jpg'
-];
+import collection1img1 from '../img/1Collection1.jpg';
+import collection1img2 from '../img/2Collection1.jpg';
+import collection1img3 from '../img/3Collection1.jpg';
+import collection1img4 from '../img/4Collection1.jpg';
 
 function Collection1Content() {
+  const collectionOneImages = [
+    collection1img1,
+    collection1img2,
+    collection1img3,
+    collection1img4,
+  ];
+
   return (
     <>
       <div className="collection1Content">
-        {collOneImages.map((img) => (
+        {collectionOneImages.map((img) => (
           <img key={img} src={img} alt={img} className="collectionOneImage" />
         ))}
     </div>

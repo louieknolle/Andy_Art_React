@@ -12,7 +12,7 @@ function Collection2Content() {
     <>
       <div className="collection2Content">
         {collectionTwoImages.map((img) => (
-          <img key={img} src={img} alt={img} className="collectionTwoImage" />
+          <img key={img} src={collectionTwoImages} alt={img} className="collectionTwoImage" />
         ))}
     </div>
     </>

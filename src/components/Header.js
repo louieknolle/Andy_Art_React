@@ -6,7 +6,7 @@ function Header(){
   return (
     <>
       <header className="header" id="sideNav">
-        <h1>Andy Knolle</h1>
+        <h1>RORY Knolle</h1>
         <NavBar />
       </header>
     </>
