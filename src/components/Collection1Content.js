@@ -1,11 +1,20 @@
 import React from 'react';
 
+const collOneImages = [
+  '../img/1Collection1.jpg',
+  '../img/2Collection1.jpg',
+  '../img/3Collection1.jpg',
+  '../img/4Collection1.jpg'
+];
+
 function Collection1Content() {
   return (
     <>
-      <div className="image">
-            <img src="img/2020-03-09-0003.jpg" alt="hand in green distorted waves" />
-      </div>
+      <div className="collection1Content">
+        {collOneImages.map((img) => (
+          <img key={img} src={img} alt={img} className="collectionOneImage" />
+        ))}
+    </div>
     </>
   );
 }

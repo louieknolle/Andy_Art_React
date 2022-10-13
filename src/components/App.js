@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import Collection from "./Collection1Content";
+import MainContent from "./MainContent";
 
 function App() {
   return (
     <React.Fragment>
       <Header />
-      <Collection />
+      <MainContent />
     </React.Fragment>
   );
 }
