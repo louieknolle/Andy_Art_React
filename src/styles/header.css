@@ -8,10 +8,10 @@
 
 /* Logo */
 .logo{
-display: inline-block;
-color: black;
-font-size: 2rem;
-margin-left: 10px;
+    display: inline-block;
+    color: black;
+    font-size: 2rem;
+    margin-left: 10px;
 }
 
 /* Menu Icon */
@@ -19,19 +19,20 @@ margin-left: 10px;
     cursor: pointer;
     float: right;
     padding: 1rem 1rem;
-    }/* Style label tag */
-
-    .hamb-line {
+}
+   
+/* Style label tag */
+.hamb-line {
     background: black;
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
+} 
 
-    } /* Style span tag */
-
-    .hamb-line::before,
-    .hamb-line::after{
+* Style span tag */
+.hamb-line::before,
+.hamb-line::after{
     background: black;
     content: '';
     display: block;
@@ -39,31 +40,37 @@ margin-left: 10px;
     position: absolute;
     transition: all .2s ease-out;
     width: 100%;
-    }
-    .hamb-line::before{
+}
+
+.hamb-line::before{
     top: 5px;
-    }
-    .hamb-line::after{
+}
+
+.hamb-line::after{
     top: -5px;
-    }
+}
 
-    .side-menu {
+.side-menu {
     display: none;
-    } /* Hide checkbox */
+} 
+/* Hide checkbox */
 
-    /* Toggle menu icon */
-    .side-menu:checked ~ nav{
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
     max-height: 100%;
-    }
-    .side-menu:checked ~ .hamb .hamb-line {
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
-    }
-    .side-menu:checked ~ .hamb .hamb-line::before {
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
     transform: rotate(-45deg);
-    top:0;
-    }
-    .side-menu:checked ~ .hamb .hamb-line::after {
+    top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
-    top:0;
-    }
+    top: 0;
+}
 
