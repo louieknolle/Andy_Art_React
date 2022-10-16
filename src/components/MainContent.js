@@ -1,12 +1,28 @@
 import React from 'react';
+// import { useState, useEffect, useRef } from "react";
 import Collection1Content from './Collection1Content';
 // import Collection2Content from './Collection2Content';
-import '../styles/maincontent.css';
+
 
 function MainContent() {
+  // const scrollContainerRef = React.useRef(null);
+  // const [scrollX, setScrollX] = React.useState(0);
+	
+  
+  // React.useEffect(() => {
+  //   const handleScrollEvent = ({wheelDeltaY}) => {
+  //     scrollContainerRef.current.scrollLeft =  scrollContainerRef.current.scrollLeft + wheelDeltaY
+  //   };
+  //   window.addEventListener('wheel', handleScrollEvent);
+
+  //   return () => {
+  //     window.removeEventListener('wheel', handleScrollEvent);
+  //   };
+  // }, []);
+
   return (
     <>
-      <div className='mainContent'>
+      <div id='mainContent'>
         <main>
           <Collection1Content />
           {/* <Collection2Content /> */}
