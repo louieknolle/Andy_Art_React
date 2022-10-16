@@ -2,7 +2,7 @@ import React from 'react';
 
 const Collection4Content = () => {
   return (
-    <div>Collection4Content</div>
+    <div className='content'>Collection4Content</div>
   )
 }
 

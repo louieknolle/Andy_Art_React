@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import collection2img1 from '../img/1Collection2.jpg';
 import collection2img2 from '../img/2Collection2.jpg';
 import collection2img3 from '../img/3Collection2.jpg';
@@ -12,16 +12,31 @@ function Collection2Content() {
     collection2img4
   ];
 
+  const scrollContainerRef = React.useRef(null)
+  
+  React.useEffect(() => {
+    const handleScrollEvent = ({wheelDeltaY}) => {
+      scrollContainerRef.current.scrollLeft =  scrollContainerRef.current.scrollLeft + wheelDeltaY
+    }
+    window.addEventListener('wheel', handleScrollEvent);
+
+    return () => {
+      window.removeEventListener('wheel', handleScrollEvent);
+    };
+  }, []);
+
   return (
     <>
-      <div id="collection2Content" className='content'>
-        {collectionTwoImages.map((img) => (
-          <img key={img} src={img} alt={img} className="collectionImage" />
-        ))}
-        <div className="caption">
-          <p>This is collection 2, cool.</p>
+      <div class='container'>
+        <div id="collection2Content" className='content' ref={scrollContainerRef}>
+          {collectionTwoImages.map((img) => (
+            <img key={img} src={img} alt={img} className="collectionImage" />
+          ))}
         </div>
-    </div>
+          <div className="caption">
+            <p>This is collection 2, cool.</p>
+          </div>
+      </div>
     </>
   );
 }
