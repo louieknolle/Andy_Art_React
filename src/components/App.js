@@ -20,7 +20,7 @@ function App() {
           <Route index element={<Collection1Content />} />
           <Route path='collection2' element={<Collection2Content />} />
           <Route path='collection3' element={<Collection3Content />} />
-          <Route path='collection2' element={<Collection4Content />} />
+          <Route path='collection4' element={<Collection4Content />} />
           <Route path='blog' element={<Blog />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />

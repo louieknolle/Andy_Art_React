@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Collection4Content = () => {
   return (
@@ -6,4 +6,4 @@ const Collection4Content = () => {
   )
 }
 
-export default Collection4Content
+export default Collection4Content;
