@@ -1,6 +1,10 @@
 /* Theming */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap'); /* import font */
 
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
 :root{
     --white: #f9f9f9;
     --black: #36383F;
@@ -148,17 +152,19 @@ img {
 ::-webkit-scrollbar {
     width: 0px;
     }
-  /* body {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  } */
 
   #root {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    margin-top: 10%;
+  }
+
+  .link {
+    color: var(--grey-500);
+  }
+  
+  .active {
+    color: var(--primary-500);
+  }
 
   .nav{
       max-height: 100%;
@@ -215,21 +221,24 @@ img {
     font-size: 1rem;
   }
 
-  #mainContent {
+    #mainContent {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+  .content {
     display: flex;
     overflow-x: scroll;
     width: 100%;
+    align-items:baseline;
   }
 
   .collectionImage {
     flex-shrink: 0;
     width: 30%;
     height: auto;
-    border-radius: 1rem;
     margin-left: 1rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
 
   .caption {
