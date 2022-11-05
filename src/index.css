@@ -1,33 +1,31 @@
 /* Theming */
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap'); /* import font */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap"); /* import font */
 
-:root{
-    --white: #f9f9f9;
-    --black: #36383F;
-    --gray: #85888C;
+:root {
+  --white: #f9f9f9;
+  --black: #36383f;
+  --gray: #85888c;
 } /* variables*/
 
-
-
 /* Reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: var(--white);
-    font-family: 'Oxygen', sans-serif;
+body {
+  background-color: var(--white);
+  font-family: "Oxygen", sans-serif;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 /* Header */
-.header{
+.header {
   background-color: #f9f9f9;
   position: sticky;
   top: 0;
@@ -37,16 +35,15 @@ ul{
   justify-content: space-between;
 }
 /* Logo */
-.logo{
+.logo {
   display: inline-block;
   color: black;
   font-size: 2rem;
   margin-left: 10px;
 }
 
-
 /* Nav menu */
-.nav{
+.nav {
   width: 100%;
   height: fit-content;
   position: fixed;
@@ -54,25 +51,25 @@ ul{
   overflow: hidden;
   margin-top: 2.6rem;
 }
-.menu a{
+.menu a {
   display: block;
   padding: 30px;
   color: black;
 }
-.menu a:hover{
+.menu a:hover {
   background-color: var(--gray);
 }
-.nav{
+.nav {
   max-height: 0;
-  transition: max-height .5s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 
 /* Menu Icon */
-.hamb{
+.hamb {
   cursor: pointer;
   float: right;
   padding: 1rem 1rem;
-}/* Style label tag */
+} /* Style label tag */
 
 .hamb-line {
   background: black;
@@ -80,23 +77,22 @@ ul{
   height: 2px;
   position: relative;
   width: 24px;
-
 } /* Style span tag */
 
 .hamb-line::before,
-.hamb-line::after{
+.hamb-line::after {
   background: black;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
   width: 100%;
 }
-.hamb-line::before{
+.hamb-line::before {
   top: 5px;
 }
-.hamb-line::after{
+.hamb-line::after {
   top: -5px;
 }
 
@@ -105,7 +101,7 @@ ul{
 } /* Hide checkbox */
 
 /* Toggle menu icon */
-.side-menu:checked ~ nav{
+.side-menu:checked ~ nav {
   max-height: 100%;
 }
 .side-menu:checked ~ .hamb .hamb-line {
@@ -113,11 +109,11 @@ ul{
 }
 .side-menu:checked ~ .hamb .hamb-line::before {
   transform: rotate(-45deg);
-  top:0;
+  top: 0;
 }
 .side-menu:checked ~ .hamb .hamb-line::after {
   transform: rotate(45deg);
-  top:0;
+  top: 0;
 }
 
 /* .mainContent {
@@ -146,9 +142,9 @@ img {
 
 /* Responsiveness */
 @media (min-width: 768px) {
-::-webkit-scrollbar {
-      width: 0;
-    } 
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 
   #root {
     display: flex;
@@ -159,18 +155,18 @@ img {
   .link {
     color: black;
   }
-  
+
   .active {
     color: #8b1c1c;
   }
 
-  .nav{
-      max-height: 100%;
-      top: 0;
-      position:static;
-      width: fit-content;
-      background-color: #f9f9f9;
-      color: black;
+  .nav {
+    max-height: 100%;
+    top: 0;
+    position: static;
+    width: fit-content;
+    background-color: #f9f9f9;
+    color: black;
   }
   /* .menu li{
       float: left;
@@ -179,7 +175,7 @@ img {
   header#sideNav.header {
     width: 50%;
     height: 100%;
-    padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
     background-color: #f9f9f9;
     color: black;
     border: none;
@@ -188,11 +184,12 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-left: 1rem;
   }
 
-  .header a, .nav a {
+  .header a,
+  .nav a {
     color: black;
   }
 
@@ -200,12 +197,12 @@ img {
     color: #8b1c1c;
   }
 
-  .menu a:hover{
+  .menu a:hover {
     background-color: transparent;
   }
 
   .menu a {
-    padding: .4rem;
+    padding: 0.4rem;
     padding-left: 0;
   }
 
@@ -219,7 +216,7 @@ img {
     font-size: 1rem;
   }
 
-    /* #mainContent {
+  /* #mainContent {
         display: flex;
         width: 100%;
         overflow-x: scroll;
@@ -243,11 +240,11 @@ img {
   .caption {
     margin-left: 4rem;
     padding: 1rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
     display: flex;
   }
 
-  .hamb{
-      display: none;
+  .hamb {
+    display: none;
   }
 }
