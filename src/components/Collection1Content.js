@@ -27,19 +27,17 @@ function Collection1Content() {
 
   return (
     <>
-      <div class="container">
-        <div
-          id="collection1Content"
-          className="content"
-          ref={scrollContainerRef}
-        >
-          {collectionOneImages.map((img) => (
-            <img key={img} src={img} alt={img} className="collectionImage" />
-          ))}
-        </div>
-        <div className="caption">
-          <p>This is collection 1, cool.</p>
-        </div>
+      <div
+        id="collection1Content"
+        className="content"
+        ref={scrollContainerRef}
+      >
+        {collectionOneImages.map((img) => (
+          <img key={img} src={img} alt={img} className="collectionImage" />
+        ))}
+      </div>
+      <div className="caption">
+        <p>This is collection 1, cool.</p>
       </div>
     </>
   );
