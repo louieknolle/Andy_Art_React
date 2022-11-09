@@ -28,19 +28,17 @@ function Collection2Content() {
 
   return (
     <>
-      <div class="container">
-        <div
-          id="collection2Content"
-          className="content"
-          ref={scrollContainerRef}
-        >
-          {collectionTwoImages.map((img) => (
-            <img key={img} src={img} alt={img} className="collectionImage" />
-          ))}
-        </div>
-        <div className="caption">
-          <p>This is collection 2, cool.</p>
-        </div>
+      <div
+        id="collection2Content"
+        className="content"
+        ref={scrollContainerRef}
+      >
+        {collectionTwoImages.map((img) => (
+          <img key={img} src={img} alt={img} className="collectionImage" />
+        ))}
+      </div>
+      <div className="caption">
+        <p>This is collection 2, cool.</p>
       </div>
     </>
   );
