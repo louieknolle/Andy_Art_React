@@ -16,6 +16,7 @@
 body {
   background-color: var(--white);
   font-family: "Oxygen", sans-serif;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -120,17 +121,17 @@ ul {
   display: flex;
 } */
 
-.content {
+/* .content {
   width: 80%;
   display: flex;
   flex-direction: column;
   margin: auto;
-}
+} */
 
-.caption {
+/* .caption {
   padding: 1rem;
   margin: auto;
-}
+} */
 
 img {
   width: 80%;
@@ -173,7 +174,7 @@ img {
   } */
 
   header#sideNav.header {
-    width: 50%;
+    width: 20%;
     height: 100%;
     padding: 1rem 0.5rem;
     background-color: #f9f9f9;
@@ -222,11 +223,21 @@ img {
         overflow-x: scroll;
     } */
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    padding: 60px 0;
+  }
+
   .content {
     display: flex;
     flex-direction: row;
+    height: 100%;
     overflow-x: scroll;
-    width: 90%;
+    align-items: center;
     /* align-items:baseline; */
     margin-left: 4rem;
   }
@@ -239,6 +250,7 @@ img {
 
   .caption {
     margin-left: 4rem;
+    margin-top: auto;
     padding: 1rem;
     font-size: 0.8rem;
     display: flex;
