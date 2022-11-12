@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import {
   ref,
   getDownloadURL,
-  listAll,
+  list,
 } from "firebase/storage";
 import storage from "../firebase";
 // import collection1img1 from "../img/1Collection1.jpg";
@@ -35,7 +35,7 @@ function Collection1Content() {
   }, []);
 
   useEffect(() => {
-    listAll(imagesListRef).then((response) => {
+    list(imagesListRef, { maxResults: 4 }).then((response) => {
       response.items.forEach((item) => {
         getDownloadURL(item).then((url) => {
           setImageUrls((prev) => [...prev, url]);
