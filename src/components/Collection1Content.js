@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
-import {
-  ref,
-  getDownloadURL,
-  list,
-} from "firebase/storage";
+// import {
+//   ref,
+//   getDownloadURL,
+//   list,
+// } from "firebase/storage";
 import storage from "../firebase";
 // import collection1img1 from "../img/1Collection1.jpg";
 // import collection1img2 from "../img/2Collection1.jpg";
@@ -17,7 +17,7 @@ function Collection1Content() {
   //   collection1img3,
   //   collection1img4,
   // ];
-  const [imageUrls, setImageUrls] = useState([]);
+  // const [imageUrls, setImageUrls] = useState([]);
   const scrollContainerRef = useRef(null);
 
   const imagesListRef = ref(storage, "collection1/");
