@@ -3,6 +3,7 @@ import collection2img1 from "../img/1Collection2.jpg";
 import collection2img2 from "../img/2Collection2.jpg";
 import collection2img3 from "../img/3Collection2.jpg";
 import collection2img4 from "../img/4Collection2.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Collection2Content() {
   const collectionTwoImages = [
@@ -34,7 +35,8 @@ function Collection2Content() {
         ref={scrollContainerRef}
       >
         {collectionTwoImages.map((img) => (
-          <img key={img} src={img} alt={img} className="collectionImage" />
+          // <img key={img} src={img} alt={img} className="collectionImage" />
+          <LazyLoadImage src={img} alt={img} key={img} className="collectionImage"/>
         ))}
       </div>
       <div className="caption">
