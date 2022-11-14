@@ -26,7 +26,7 @@ function NavBar() {
                 Collection 2
               </NavLink>
             </li>
-            <li>
+            {/* <li>
             <NavLink
                 to='/collection3' 
                 className={({isActive})=>(isActive ? 'link active' : 'link')}
@@ -41,7 +41,7 @@ function NavBar() {
                 >
                 Collection 4
               </NavLink>
-            </li>
+            </li> */}
             <div className="nonArtLinks">
               <li>
                 <NavLink
