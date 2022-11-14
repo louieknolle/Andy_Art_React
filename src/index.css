@@ -252,6 +252,12 @@ img {
     height: auto;
   }
 
+  #about {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
   .caption {
     /* margin-left: 4rem; */
     margin-top: auto;

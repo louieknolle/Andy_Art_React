@@ -45,14 +45,6 @@ function NavBar() {
             <div className="nonArtLinks">
               <li>
                 <NavLink
-                  to='/blog' 
-                  className={({isActive})=>(isActive ? 'link active' : 'link')}
-                  >
-                  Blog
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
                   to='/about' 
                   className={({isActive})=>(isActive ? 'link active' : 'link')}
                   >

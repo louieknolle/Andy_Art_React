@@ -6,7 +6,6 @@ import Collection1Content from "./Collection1Content";
 import Collection2Content from "./Collection2Content";
 import Collection3Content from "./Collection3Content";
 import Collection4Content from "./Collection4Content";
-import Blog from "./Blog";
 import About from "./About";
 import Contact from "./Contact";
 
@@ -22,7 +21,6 @@ function App() {
             <Route path='collection2' element={<Collection2Content />} />
             <Route path='collection3' element={<Collection3Content />} />
             <Route path='collection4' element={<Collection4Content />} />
-            <Route path='blog' element={<Blog />} />
             <Route path='about' element={<About />} />
             <Route path='contact' element={<Contact />} />
           </Route>
