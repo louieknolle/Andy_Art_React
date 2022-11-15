@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const FORM_ENDPOINT = ""; // TODO - fill on the later step
+const FORM_ENDPOINT =
+  "https://public.herotofu.com/v1/53b7dc20-6490-11ed-891b-4f350712a1f0";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -26,18 +27,52 @@ const Contact = () => {
       method="POST"
       target="_blank"
     >
-      <div>
-        <input type="text" placeholder="Your name" name="name" required />
-      </div>
-      <div>
-        <input type="email" placeholder="Email" name="email" required />
-      </div>
-      <div>
-        <textarea placeholder="Your message" name="message" required />
-      </div>
-      <div>
-        <button type="submit"> Send a message </button>
-      </div>
+      <ul className="form-style-1">
+        <div>
+          <li>
+            <label>
+              Your Name <span className="required">*</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Person J. Personson"
+              name="name"
+              required
+              className="field-long"
+            />
+          </li>
+        </div>
+        <div>
+          <li>
+            <label>
+              Email <span class="required">*</span>
+            </label>
+            <input
+              type="email"
+              placeholder="xyz@email.com"
+              name="email"
+              required
+              className="field-long"
+            />
+          </li>
+        </div>
+        <div>
+          <li>
+            <label>
+              Your Message <span class="required">*</span>
+            </label>
+            <textarea
+              placeholder="I saw some of your latest work and..."
+              name="message"
+              required
+              className="field-long field-textarea"
+            />
+          </li>
+        </div>
+        <div>
+          <button type="submit"> Send a message </button>
+        </div>
+      </ul>
     </form>
   );
 };
