@@ -15,7 +15,7 @@ const SharedLayout = () => {
         <div>
           <p style={mystyle}>
             Portfolio currently under development, please view recent work on my
-            Instagram.
+            Instagram or message me from the Contact page.
           </p>
           {/* <FontAwesomeIcon icon={faInstagram} /> */}
           <a
