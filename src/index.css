@@ -326,7 +326,7 @@ select {
     flex-direction: row;
     height: 100%;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     align-items: center;
     /* align-items:baseline; */
     /* margin-left: 4rem; */
