@@ -29,15 +29,18 @@ function Collection2Content() {
 
   return (
     <>
-      <div
-        id="collection2Content"
-        className="content"
-        ref={scrollContainerRef}
-      >
-        {collectionTwoImages.map((img) => (
-          // <img key={img} src={img} alt={img} className="collectionImage" />
-          <LazyLoadImage src={img} alt={img} key={img} className="collectionImage"/>
-        ))}
+      <div id="collection2Content" className="content" ref={scrollContainerRef}>
+        <div className="innerImages">
+          {collectionTwoImages.map((img) => (
+            <img key={img} src={img} alt={img} className="collectionImage" />
+            // <LazyLoadImage
+            //   src={img}
+            //   alt={img}
+            //   key={img}
+            //   className="collectionImage"
+            // />
+          ))}
+        </div>
       </div>
       <div className="caption">
         <p>This is collection 2, cool.</p>

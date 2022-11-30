@@ -28,15 +28,18 @@ function Collection1Content() {
 
   return (
     <>
-      <div
-        id="collection1Content"
-        className="content"
-        ref={scrollContainerRef}
-      >
-        {collectionOneImages.map((img) => (
-          // <img key={img} src={img} alt={img} className="collectionImage" />
-          <LazyLoadImage src={img} alt={img} key={img} className="collectionImage" />
-        ))}
+      <div id="collection1Content" className="content" ref={scrollContainerRef}>
+        <div className="innerImages">
+          {collectionOneImages.map((img) => (
+            // <img key={img} src={img} alt={img} className="collectionImage" />
+            <LazyLoadImage
+              src={img}
+              alt={img}
+              key={img}
+              className="collectionImage"
+            />
+          ))}
+        </div>
       </div>
       <div className="caption">
         <p>This is collection 1, cool.</p>
