@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 
 const mystyle = {
   alignSelf: "center",
+  padding: ".75rem",
 };
 
 const SharedLayout = () => {
@@ -22,6 +23,7 @@ const SharedLayout = () => {
             href="https://www.instagram.com/turning_granular/?hl=en"
             target="_blank"
             rel="noreferrer"
+            style={{ padding: ".75rem" }}
           >
             <i className="fa-brands fa-instagram"></i> @turning_granular
           </a>
