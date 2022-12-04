@@ -2,6 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
+  const uncheck = () => {
+    let input = document.getElementById("side-menu");
+    input.checked = false;
+  };
+
   return (
     <>
       <header className="header" id="sideNav">
@@ -20,7 +25,7 @@ function NavBar() {
           <span className="hamb-line"></span>
         </label>
         <nav className="nav">
-          <ul className="menu">
+          <ul className="menu" onClick={uncheck}>
             <li>
               <NavLink
                 to="/"
