@@ -4,7 +4,7 @@
 :root {
   --white: #f9f9f9;
   --black: #36383f;
-  --gray: #85888c;
+  --gray: #d8e1ed;
 } /* variables*/
 
 /* Reset */
@@ -45,8 +45,10 @@ ul {
 /* Nav menu */
 .nav {
   width: 100%;
-  height: fit-content;
+  height: 100%;
   position: fixed;
+  left: 0;
+  right: 0;
   background-color: #f9f9f9;
   overflow: hidden;
   margin-top: 2.6rem;
