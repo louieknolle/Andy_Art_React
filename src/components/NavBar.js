@@ -24,6 +24,7 @@ function NavBar() {
         <label className="hamb" for="side-menu">
           <span className="hamb-line"></span>
         </label>
+
         <nav className="nav">
           <ul className="menu" onClick={uncheck}>
             <li>

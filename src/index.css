@@ -29,7 +29,7 @@ ul {
   background-color: #f9f9f9;
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 100vw;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -103,6 +103,7 @@ ul {
 /* Toggle menu icon */
 .side-menu:checked ~ nav {
   max-height: 100%;
+  max-width: 100%;
 }
 
 .side-menu:checked ~ .hamb .hamb-line {
@@ -134,9 +135,18 @@ ul {
   margin-top: 2rem;
 }
 
+.collectionImage {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .caption {
   padding: 1rem;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 img {
