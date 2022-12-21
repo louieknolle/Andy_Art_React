@@ -7,6 +7,12 @@ function NavBar() {
     input.checked = false;
   };
 
+  let activeStyle = {
+    textDecoration: "",
+  };
+
+  let activeClassName = "underline";
+
   return (
     <>
       <header className="header" id="sideNav">
@@ -30,9 +36,7 @@ function NavBar() {
             <li>
               <NavLink
                 to="/"
-                className={({ isActive }) =>
-                  isActive ? "link active" : "link"
-                }
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
               >
                 Collection 1
               </NavLink>
@@ -41,7 +45,7 @@ function NavBar() {
               <NavLink
                 to="/collection2"
                 className={({ isActive }) =>
-                  isActive ? "link active" : "link"
+                  isActive ? activeClassName : undefined
                 }
               >
                 Collection 2
@@ -68,7 +72,7 @@ function NavBar() {
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    isActive ? "link active" : "link"
+                    isActive ? activeClassName : undefined
                   }
                 >
                   About
@@ -78,7 +82,7 @@ function NavBar() {
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    isActive ? "link active" : "link"
+                    isActive ? activeClassName : undefined
                   }
                 >
                   Contact

@@ -11,7 +11,9 @@ const mystyle = {
 const SharedLayout = () => {
   return (
     <>
-      <NavBar />
+      <div className="navParent">
+        <NavBar />
+      </div>
       <div className="container">
         <div>
           <p style={mystyle}>

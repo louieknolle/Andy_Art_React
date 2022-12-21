@@ -274,8 +274,14 @@ select {
     color: black;
   }
 
+  /* .navParent {
+    height: 100%;
+    display: flex;
+  } */
+
   header#sideNav.header {
-    width: 20%;
+    position: static;
+    /* width: 20%; */
     height: 100%;
     padding: 1rem 0.5rem;
     background-color: #f9f9f9;
@@ -286,8 +292,14 @@ select {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-left: 1rem;
+  }
+
+  .navParent {
+    width: 20%;
+    display: flex;
+    justify-content: center;
   }
 
   .header a,
@@ -370,6 +382,7 @@ select {
     padding: 1rem;
     font-size: 0.8rem;
     display: flex;
+    justify-content: flex-start;
   }
 
   .hamb {
