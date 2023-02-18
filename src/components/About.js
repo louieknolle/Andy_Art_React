@@ -4,23 +4,13 @@ const About = () => {
   return (
     <section className="content" id="about">
       <article>
-        Born on the wrong side of the tracks, Andy Knolle began his art career
-        inspired by the macabre beauty of a roadkill deer. With no brushes
-        nearby, he struck a match on an old broomstick and painted with the
-        smoldering broom straw. His primary motivations in life are anarchy,
-        subverting your perception of reality and the Chicago Black Sox. He's
-        not adverse to shedding a tear when moved by the beauty of his own work.
-        He's the shit and everyone should know it.
-      </article>
-      <br></br>
-      <article>
-        His primary media are old ass camera film, block screen prints and the
-        tortured love letters of his youth. He can be found in Cincinnati either
-        working in studios, classying up photography gigs, or doing ollies at
-        the skate park. If you see something you like, please don't hesitate to
-        give him a ring. The only thing he loves more than developing film in
-        his bathroom is making sincere connections with fans of his work and
-        genuinely dope individuals.
+        Andy Knolle (he/him b. 1993) is an interdisciplinary artist currently
+        working in Cincinnati, OH. He received his BFA in Studio Art and a
+        Certificate in Critical Visions from the University of Cincinnati’s
+        College of Design, Architecture, Art, and Planning (DAAP). He has shown
+        nationally and internationally at Kunsthalle am Hamburger Platz, Berlin.
+        Andy works with a process-driven practice to unpack the ideas of noise,
+        art as technology, and our relation to communicative technologies.
       </article>
     </section>
   );

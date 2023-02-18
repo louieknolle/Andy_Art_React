@@ -42,9 +42,6 @@ function Collection2Content() {
           ))}
         </div>
       </div>
-      <div className="caption">
-        <p>This is collection 2, cool.</p>
-      </div>
     </>
   );
 }
