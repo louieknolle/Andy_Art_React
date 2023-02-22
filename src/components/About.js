@@ -22,8 +22,8 @@ const About = () => {
           technologies.
         </article>
       </section>
-      <section>
-        <div className="aboutRightCol">
+      <section className="aboutRightCol">
+        <div>
           <h2>Education</h2>
           <ul>
             <li>2016</li>

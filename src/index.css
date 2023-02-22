@@ -370,21 +370,36 @@ select {
 
   #about {
     display: flex;
-    flex-direction: column;
-    width: 60%;
+    flex-direction: row;
+    width: 100%;
     align-items: center;
     justify-content: center;
   }
 
-  .caption {
-    /* margin-left: 4rem; */
-    margin-top: auto;
-    padding: 1rem;
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: flex-start;
+  .aboutPhoto {
+    width: 100%;
+    height: auto;
+    margin-right: 2rem;
   }
 
+  .aboutLeftCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    width: 40%;
+    margin-right: 1rem;
+    margin-top: 10%;
+  }
+
+  .aboutRightCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    width: 60%;
+    margin-top: 149%;
+  }
   .hamb {
     display: none;
   }
