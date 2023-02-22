@@ -43,7 +43,7 @@ function NavBar() {
             </li>
             <li>
               <NavLink
-                to="/collection2"
+                to="/collection"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -51,22 +51,36 @@ function NavBar() {
                 Collection 2
               </NavLink>
             </li>
-            {/* <li>
-            <NavLink
-                to='/collection3' 
-                className={({isActive})=>(isActive ? 'link active' : 'link')}
-                >
+            <li>
+              <NavLink
+                to="/collection3"
+                className={({ isActive }) =>
+                  isActive ? "link active" : "link"
+                }
+              >
                 Collection 3
               </NavLink>
             </li>
             <li>
-            <NavLink
-                to='/collection4' 
-                className={({isActive})=>(isActive ? 'link active' : 'link')}
-                >
+              <NavLink
+                to="/collection4"
+                className={({ isActive }) =>
+                  isActive ? "link active" : "link"
+                }
+              >
                 Collection 4
               </NavLink>
-            </li> */}
+            </li>
+            <li>
+              <NavLink
+                to="/collection5"
+                className={({ isActive }) =>
+                  isActive ? "link active" : "link"
+                }
+              >
+                Collection 5
+              </NavLink>
+            </li>
             <div className="nonArtLinks">
               <li>
                 <NavLink
