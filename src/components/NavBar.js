@@ -23,6 +23,7 @@ function NavBar() {
             target="_blank"
             rel="noreferrer"
           >
+            {" "}
             Andy Knolle
           </a>
         </h1>
@@ -38,47 +39,47 @@ function NavBar() {
                 to="/"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
               >
-                Collection 1
+                Chromatic Delineations
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/collection"
+                to="#"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
               >
-                Collection 2
+                S.A.H.0.
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/collection3"
+                to="#"
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
               >
-                Collection 3
+                Sub-Divisions
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/collection4"
+                to="#"
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
               >
-                Collection 4
+                Failed Constructions
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/collection5"
+                to="#"
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
               >
-                Collection 5
+                Noisy Relations
               </NavLink>
             </li>
             <div className="nonArtLinks">
