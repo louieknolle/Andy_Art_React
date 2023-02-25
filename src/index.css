@@ -176,6 +176,7 @@ ul {
   /* margin-top: 10%; */
   overflow-y: scroll;
   padding-top: 0;
+  margin-bottom: 6rem;
 }
 
 .aboutRightCol {
@@ -218,18 +219,12 @@ ul {
   align-items: center;
 }
 
-.caption {
-  padding: 1rem;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
 img {
   width: 80%;
   height: auto;
   object-fit: cover;
   padding: 1rem;
+  padding-top: 0;
   margin: auto;
 }
 
@@ -327,7 +322,7 @@ select {
 
   #root {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     align-items: flex-start;
   }
 
@@ -429,6 +424,7 @@ select {
     width: 100%;
     overflow-x: auto;
     align-items: flex-start;
+    /* justify-content: flex-start; */
     padding-top: 0;
     margin-top: 0;
     /* margin-left: 20%; */
@@ -437,14 +433,16 @@ select {
   .innerImages {
     display: flex;
     height: 80%;
-    margin-left: 50%;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 35%;
   }
 
   .collectionImage {
     flex-shrink: 0;
     width: auto;
     height: 100%;
-    margin-right: 26rem;
+    margin-right: 20rem;
   }
 
   #about {
@@ -456,6 +454,7 @@ select {
     font-size: 1.5rem;
     padding-top: 0;
     margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .aboutPhoto {
@@ -492,6 +491,7 @@ select {
     /* margin-top: 10%; */
     overflow-y: scroll;
     padding-top: 0;
+    margin-left: 3rem;
   }
 
   .aboutHeader {
