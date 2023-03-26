@@ -4,6 +4,7 @@ import collection1img2 from "../img/2Collection1.jpg";
 import collection1img3 from "../img/3Collection1.jpg";
 import collection1img4 from "../img/4Collection1.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { cdPics } from "../CDPics";
 
 function Collection1Content() {
   const collectionOneImages = [
