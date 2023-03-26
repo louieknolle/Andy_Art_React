@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "../index.css";
 import SharedLayout from "./SharedLayout";
 import CollectionContent from "./CollectionContent";
-import Collection2Content from "./Collection2Content";
 import About from "./About";
 import Contact from "./Contact";
 
@@ -13,21 +12,25 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<CollectionContent />} />
-          <Route path="saho" element={<CollectionContent />} saho={true} />
           <Route
-            path="subdivisions"
+            path="saho"
             element={<CollectionContent />}
-            subDivisions={true}
+            collection="saho"
+          />
+          <Route
+            path="subDivisions"
+            element={<CollectionContent />}
+            collection="subDivisions"
           />
           <Route
             path="constructs"
             element={<CollectionContent />}
-            constructs={true}
+            collection="constructs"
           />
           <Route
-            path="noisyrelations"
+            path="noisyRelations"
             element={<CollectionContent />}
-            noisyRelations={true}
+            collection="noisyRelations"
           />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />

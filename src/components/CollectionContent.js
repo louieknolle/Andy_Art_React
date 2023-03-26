@@ -1,13 +1,14 @@
 import React, { useRef, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { cdPics } from "../cDPics";
 import { sahoPics } from "../sahoPics";
 import { nRPics } from "../nRPics";
 import { subDivPics } from "../subDivPics";
-
 import { constructsPics } from "../constructsPics";
 
-function CollectionContent({ saho, subDivisions, constructs, noisyRelations }) {
+function CollectionContent() {
+  const { collection } = useParams();
   const [selectedCollection, setSelectedCollection] = useState(cdPics);
   const scrollContainerRef = useRef(null);
 
@@ -24,17 +25,29 @@ function CollectionContent({ saho, subDivisions, constructs, noisyRelations }) {
   }, []);
 
   useEffect(() => {
-    if (saho) setSelectedCollection(sahoPics);
-    if (subDivisions) setSelectedCollection(subDivPics);
-    if (constructs) setSelectedCollection(constructsPics);
-    if (noisyRelations) setSelectedCollection(nRPics);
-  }, [saho, subDivisions, constructs, noisyRelations]);
+    switch (collection) {
+      case "saho":
+        setSelectedCollection(sahoPics);
+        break;
+      case "subDivisions":
+        setSelectedCollection(subDivPics);
+        break;
+      case "noisyRelations":
+        setSelectedCollection(nRPics);
+        break;
+      case "constructs":
+        setSelectedCollection(constructsPics);
+        break;
+      default:
+        setSelectedCollection(cdPics);
+    }
+  }, [collection]);
 
   return (
     <>
       <div id="collection1Content" className="content" ref={scrollContainerRef}>
         <div className="innerImages">
-          {cdPics.map((img) => (
+          {selectedCollection.map((img) => (
             <img key={img} src={img} alt={img} className="collectionImage" />
           ))}
         </div>
