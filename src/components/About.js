@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
-import aboutPhoto from "../img/andyKnolle.jpg";
+import aboutPhoto from "../img/andy.jpg";
 
 const About = () => {
   return (
