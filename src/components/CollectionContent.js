@@ -1,17 +1,13 @@
-import React, { useRef, useEffect } from "react";
-import collection2img1 from "../img/1Collection2.jpg";
-import collection2img2 from "../img/2Collection2.jpg";
-import collection2img3 from "../img/3Collection2.jpg";
-import collection2img4 from "../img/4Collection2.jpg";
+import React, { useRef, useEffect, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { cdPics } from "../cDPics";
+import { sahoPics } from "../sAHOPics";
+import { nRPics } from "../nRPics";
+import { subDivPics } from "../subDivPics";
+import { constructsPics } from "../constructsPics";
 
 function CollectionContent() {
-  const collectionTwoImages = [
-    collection2img1,
-    collection2img2,
-    collection2img3,
-    collection2img4,
-  ];
-
+  const [selectedCollection, setSelectedCollection] = useState("cdPics");
   const scrollContainerRef = useRef(null);
 
   useEffect(() => {
@@ -28,9 +24,9 @@ function CollectionContent() {
 
   return (
     <>
-      <div id="collection2Content" className="content" ref={scrollContainerRef}>
+      <div id="collection1Content" className="content" ref={scrollContainerRef}>
         <div className="innerImages">
-          {collectionTwoImages.map((img) => (
+          {cdPics.map((img) => (
             <img key={img} src={img} alt={img} className="collectionImage" />
           ))}
         </div>

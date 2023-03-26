@@ -44,7 +44,7 @@ function NavBar() {
             </li>
             <li>
               <NavLink
-                to="#"
+                to="/saho"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -54,7 +54,7 @@ function NavBar() {
             </li>
             <li>
               <NavLink
-                to="#"
+                to="subdivisions"
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
@@ -64,7 +64,7 @@ function NavBar() {
             </li>
             <li>
               <NavLink
-                to="#"
+                to="constructs"
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
@@ -74,7 +74,7 @@ function NavBar() {
             </li>
             <li>
               <NavLink
-                to="#"
+                to="noisyrelations"
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
