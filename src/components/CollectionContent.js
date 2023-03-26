@@ -7,10 +7,13 @@ import { nRPics } from "../nRPics";
 import { subDivPics } from "../subDivPics";
 import { constructsPics } from "../constructsPics";
 
-function CollectionContent() {
-  const { collection } = useParams();
+function CollectionContent({ collection }) {
+  // const params = useParams();
+  // const { collection } = params;
   const [selectedCollection, setSelectedCollection] = useState(cdPics);
   const scrollContainerRef = useRef(null);
+
+  console.log(collection);
 
   useEffect(() => {
     const handleScrollEvent = ({ wheelDeltaY }) => {

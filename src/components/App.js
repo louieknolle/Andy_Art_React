@@ -16,23 +16,19 @@ function App() {
           <Route index element={<CollectionContent />} />
           <Route
             path="saho"
-            element={<CollectionContent />}
-            collection="saho"
+            element={<CollectionContent collection="saho" />}
           />
           <Route
             path="subDivisions"
-            element={<CollectionContent />}
-            collection="subDivisions"
+            element={<CollectionContent collection="subDivisions" />}
           />
           <Route
             path="constructs"
-            element={<CollectionContent />}
-            collection="constructs"
+            element={<CollectionContent collection="constructs" />}
           />
           <Route
             path="noisyRelations"
-            element={<CollectionContent />}
-            collection="noisyRelations"
+            element={<CollectionContent collection="noisyRelations" />}
           />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
