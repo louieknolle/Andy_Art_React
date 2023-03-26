@@ -69,6 +69,14 @@
     color: black;
   }
 
+  /* .nav a:active {
+    color: #8b1c1c;
+  } */
+
+  .nav a.active {
+    color: #8b1c1c;
+  }
+
   .nav a:hover {
     color: #8b1c1c;
   }

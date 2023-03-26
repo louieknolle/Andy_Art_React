@@ -14,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<CollectionContent />} />
+          <Route path="chromatic" element={<CollectionContent />} />
           <Route
             path="saho"
             element={<CollectionContent collection="saho" />}
