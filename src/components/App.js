@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "../index.css";
+import "../form.css";
+import "../fullWidth.css";
 import SharedLayout from "./SharedLayout";
 import CollectionContent from "./CollectionContent";
 import About from "./About";
