@@ -1,13 +1,14 @@
 import React, { useRef, useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { cdPics } from "../cDPics";
-import { sahoPics } from "../sAHOPics";
+import { sahoPics } from "../sahoPics";
 import { nRPics } from "../nRPics";
 import { subDivPics } from "../subDivPics";
+
 import { constructsPics } from "../constructsPics";
 
-function CollectionContent() {
-  const [selectedCollection, setSelectedCollection] = useState("cdPics");
+function CollectionContent({ saho, subDivisions, constructs, noisyRelations }) {
+  const [selectedCollection, setSelectedCollection] = useState(cdPics);
   const scrollContainerRef = useRef(null);
 
   useEffect(() => {
@@ -21,6 +22,13 @@ function CollectionContent() {
       window.removeEventListener("wheel", handleScrollEvent);
     };
   }, []);
+
+  useEffect(() => {
+    if (saho) setSelectedCollection(sahoPics);
+    if (subDivisions) setSelectedCollection(subDivPics);
+    if (constructs) setSelectedCollection(constructsPics);
+    if (noisyRelations) setSelectedCollection(nRPics);
+  }, [saho, subDivisions, constructs, noisyRelations]);
 
   return (
     <>
