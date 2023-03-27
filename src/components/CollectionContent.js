@@ -1,6 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { cdPics } from "../cDPics";
 import { sahoPics } from "../sahoPics";
 import { nRPics } from "../nRPics";
