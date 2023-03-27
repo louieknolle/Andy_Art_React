@@ -1,7 +1,7 @@
 .form-style-1 {
   margin: 10px auto;
-  max-width: 400px;
-  padding: 20px 12px 10px 20px;
+  max-width: 80%;
+  padding: 20% 12px 10px 20px;
   font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .form-style-1 li {
@@ -87,7 +87,7 @@ select {
 @media (min-width: 768px) {
   .form-style-1 {
     margin: 10px auto;
-    max-width: 400px;
+    max-width: 60%;
     padding: 20px 12px 10px 20px;
     font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }

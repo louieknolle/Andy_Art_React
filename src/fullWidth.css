@@ -8,7 +8,7 @@
     display: flex;
     height: 100%;
     align-items: flex-start;
-    padding-top: 5%;
+    padding-top: 8%;
   }
 
   .link {
@@ -137,6 +137,7 @@
     width: auto;
     height: 100%;
     margin-right: 20rem;
+    padding-top: 0;
   }
 
   #about {

@@ -27,10 +27,10 @@ ul {
 /* Header */
 .header {
   background-color: #f9f9f9;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100vw;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -224,6 +224,6 @@ img {
   height: auto;
   object-fit: cover;
   padding: 1rem;
-  padding-top: 0;
+  padding-top: 10%;
   margin: auto;
 }
