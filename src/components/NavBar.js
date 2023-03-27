@@ -7,12 +7,6 @@ function NavBar() {
     input.checked = false;
   };
 
-  let activeStyle = {
-    textDecoration: "",
-  };
-
-  let activeClassName = "underline";
-
   return (
     <>
       <header className="header" id="sideNav">
@@ -23,6 +17,7 @@ function NavBar() {
             target="_blank"
             rel="noreferrer"
           >
+            {" "}
             Andy Knolle
           </a>
         </h1>
@@ -34,57 +29,36 @@ function NavBar() {
         <nav className="nav">
           <ul className="menu" onClick={uncheck}>
             <li>
-              <NavLink
-                to="/"
-                style={({ isActive }) => (isActive ? activeStyle : undefined)}
-              >
-                Collection 1
+              <NavLink to="/chromatic">Chromatic Delineations</NavLink>
+            </li>
+            <li>
+              <NavLink to="/saho" exact activeClassName="active">
+                S.A.H.0.
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/collection2"
-                className={({ isActive }) =>
-                  isActive ? activeClassName : undefined
-                }
-              >
-                Collection 2
-              </NavLink>
-            </li>
-            {/* <li>
-            <NavLink
-                to='/collection3' 
-                className={({isActive})=>(isActive ? 'link active' : 'link')}
-                >
-                Collection 3
+              <NavLink to="subdivisions" exact activeClassName="active">
+                Sub-Divisions
               </NavLink>
             </li>
             <li>
-            <NavLink
-                to='/collection4' 
-                className={({isActive})=>(isActive ? 'link active' : 'link')}
-                >
-                Collection 4
+              <NavLink to="constructs" exact activeClassName="active">
+                Failed Constructions
               </NavLink>
-            </li> */}
+            </li>
+            <li>
+              <NavLink to="noisyrelations" exact activeClassName="active">
+                Noisy Relations
+              </NavLink>
+            </li>
             <div className="nonArtLinks">
               <li>
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : undefined
-                  }
-                >
+                <NavLink to="/about" exact activeClassName="active">
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : undefined
-                  }
-                >
+                <NavLink to="/contact" exact activeClassName="active">
                   Contact
                 </NavLink>
               </li>

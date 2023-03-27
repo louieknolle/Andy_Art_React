@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "../index.css";
+import "../form.css";
+import "../fullWidth.css";
 import SharedLayout from "./SharedLayout";
-import Collection1Content from "./Collection1Content";
-import Collection2Content from "./Collection2Content";
+import CollectionContent from "./CollectionContent";
 import About from "./About";
 import Contact from "./Contact";
 
@@ -12,8 +13,24 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route index element={<Collection1Content />} />
-          <Route path="collection2" element={<Collection2Content />} />
+          <Route index element={<CollectionContent />} />
+          <Route path="chromatic" element={<CollectionContent />} />
+          <Route
+            path="saho"
+            element={<CollectionContent collection="saho" />}
+          />
+          <Route
+            path="subDivisions"
+            element={<CollectionContent collection="subDivisions" />}
+          />
+          <Route
+            path="constructs"
+            element={<CollectionContent collection="constructs" />}
+          />
+          <Route
+            path="noisyRelations"
+            element={<CollectionContent collection="noisyRelations" />}
+          />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
         </Route>
