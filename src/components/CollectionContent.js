@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 
 import { cdPics } from "../cDPics";
 import { sahoPics } from "../sahoPics";
@@ -6,9 +6,17 @@ import { nRPics } from "../nRPics";
 import { subDivPics } from "../subDivPics";
 import { constructsPics } from "../constructsPics";
 
-function CollectionContent({ collection }) {
-  const [selectedCollection, setSelectedCollection] = useState(cdPics);
+function CollectionContent({ collection = cdPics }) {
   const scrollContainerRef = useRef(null);
+  const pictureArrays = {
+    saho: sahoPics,
+    subDivisions: subDivPics,
+    noisyRelations: nRPics,
+    constructs: constructsPics,
+    default: cdPics,
+  };
+
+  const selectedCollection = pictureArrays[collection];
 
   useEffect(() => {
     const handleScrollEvent = ({ wheelDeltaY }) => {
@@ -17,20 +25,10 @@ function CollectionContent({ collection }) {
     };
     window.addEventListener("wheel", handleScrollEvent);
 
-    const pictureArrays = {
-      saho: sahoPics,
-      subDivisions: subDivPics,
-      noisyRelations: nRPics,
-      constructs: constructsPics,
-      default: cdPics,
-    };
-
-    setSelectedCollection(pictureArrays[collection] || pictureArrays.default);
-
     return () => {
       window.removeEventListener("wheel", handleScrollEvent);
     };
-  }, [collection]);
+  }, []);
 
   return (
     <>
