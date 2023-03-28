@@ -11,15 +11,9 @@ function NavBar() {
     <>
       <header className="header" id="sideNav">
         <h1>
-          <a
-            href="https://www.instagram.com/turning_granular/?hl=en"
-            className="logo"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
+          <NavLink to="/chromatic" className="logo">
             Andy Knolle
-          </a>
+          </NavLink>
         </h1>
         <input className="side-menu" type="checkbox" id="side-menu" />
         <label className="hamb" for="side-menu">
