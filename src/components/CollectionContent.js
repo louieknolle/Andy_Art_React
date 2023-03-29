@@ -6,18 +6,18 @@ import { nRPics } from "../nRPics";
 import { subDivPics } from "../subDivPics";
 import { constructsPics } from "../constructsPics";
 
-function CollectionContent({ collection = cdPics }) {
-  const scrollContainerRef = useRef(null);
+function CollectionContent({ collection = "chromatic" }) {
   const pictureArrays = {
     saho: sahoPics,
     subDivisions: subDivPics,
     noisyRelations: nRPics,
     constructs: constructsPics,
-    default: cdPics,
+    chromatic: cdPics,
   };
 
   const selectedCollection = pictureArrays[collection];
 
+  const scrollContainerRef = useRef(null);
   useEffect(() => {
     const handleScrollEvent = ({ wheelDeltaY }) => {
       scrollContainerRef.current.scrollLeft =
