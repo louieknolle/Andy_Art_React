@@ -30,6 +30,10 @@ function CollectionContent({ collection = "chromatic" }) {
     };
   }, []);
 
+  useEffect(() => {
+    scrollContainerRef.current.scrollLeft = 0;
+  }, [collection]);
+
   return (
     <>
       <div id="collection1Content" className="content" ref={scrollContainerRef}>
