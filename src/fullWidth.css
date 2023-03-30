@@ -129,7 +129,8 @@
     height: 80%;
     width: 100%;
     justify-content: flex-start;
-    margin-left: 15%;
+    padding-left: 20%;
+    padding-right: 50%;
   }
 
   .collectionImage {
@@ -149,6 +150,7 @@
     justify-content: center;
     font-size: 1.5rem;
     padding-top: 0;
+    margin-bottom: 3%;
     margin-left: 2rem;
     margin-right: 2rem;
 
