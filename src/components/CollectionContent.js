@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from "react";
 
-import { cdPics } from "../cDPics";
-import { sahoPics } from "../sahoPics";
-import { nRPics } from "../nRPics";
-import { subDivPics } from "../subDivPics";
-import { constructsPics } from "../constructsPics";
+import { cdPics } from "../imgArrays/cDPics";
+import { sahoPics } from "../imgArrays/sahoPics";
+import { nRPics } from "../imgArrays/nRPics";
+import { subDivPics } from "../imgArrays/subDivPics";
+import { constructsPics } from "../imgArrays/constructsPics";
 
 function CollectionContent({ collection = "chromatic" }) {
   const pictureArrays = {
