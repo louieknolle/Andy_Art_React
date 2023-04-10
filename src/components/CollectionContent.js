@@ -36,7 +36,7 @@ function CollectionContent({ collection = "chromatic" }) {
 
   return (
     <>
-      <div id="collection1Content" className="content" ref={scrollContainerRef}>
+      <div id="collectionContent" className="content" ref={scrollContainerRef}>
         <div className="innerImages">
           {selectedCollection.map((img) => (
             <img key={img} src={img} alt={img} className="collectionImage" />
