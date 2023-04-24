@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from "react";
+// import Spinner from "./Spinner";
+// import { Img } from "react-image";
 
 import { cdPics } from "../imgArrays/cDPics";
 import { sahoPics } from "../imgArrays/sahoPics";
@@ -39,7 +41,20 @@ function CollectionContent({ collection = "chromatic" }) {
       <div id="collectionContent" className="content" ref={scrollContainerRef}>
         <div className="innerImages">
           {selectedCollection.map((img) => (
-            <img key={img} src={img} alt={img} className="collectionImage" />
+            <img
+              key={img}
+              src={img}
+              alt={img}
+              className="collectionImage"
+              loading="lazy"
+            />
+            //            <Img
+            //               key={img}
+            //               src={img}
+            //               alt={img}
+            //               className="collectionImage"
+            //               loader={<Spinner />} // Replace with your spinner component
+            //             />
           ))}
         </div>
       </div>

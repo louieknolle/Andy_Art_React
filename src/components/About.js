@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
+import { Img } from "react-image";
+import Spinner from "./Spinner";
 import aboutPhoto from "../img/andy.jpg";
 
 const About = () => {
@@ -7,7 +9,12 @@ const About = () => {
     <div className="" id="about">
       <section className="aboutLeftCol">
         <div className="aboutPhoto">
-          <img src={aboutPhoto} alt="Andy Knolle portrait" id="andyPortrait" />
+          <Img
+            src={aboutPhoto}
+            alt="Andy Knolle portrait"
+            id="andyPortrait"
+            loader={<Spinner />}
+          />
         </div>
         <article>
           Andy Knolle (he/him b. 1993) is an interdisciplinary artist currently
